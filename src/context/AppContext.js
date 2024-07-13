@@ -19,13 +19,13 @@ export default function AppContextProvider({ children }) {
   //All state variable in the application
   const [notes, setNotes] = useState(() => loadFromLocalStorage("notes", []));
   const [deleted, setDeleted] = useState(() =>
-    loadFromLocalStorage("notes", [])
+    loadFromLocalStorage("deleted", [])
   );
   const [archived, setArchived] = useState(() =>
-    loadFromLocalStorage("notes", [])
+    loadFromLocalStorage("archived", [])
   );
   const [important, setImportant] = useState(() =>
-    loadFromLocalStorage("notes", [])
+    loadFromLocalStorage("important", [])
   );
   const [showOverlay, setShowOverlay] = useState(false);
 
