@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Note-Keeping-Application/static/css/main.fb060b46.css",
+    "main.js": "/Note-Keeping-Application/static/js/main.a5c1be87.js",
+    "static/media/unarchive.svg": "/Note-Keeping-Application/static/media/unarchive.577757a7121eb460035133ceaa5ef184.svg",
+    "static/media/bin.svg": "/Note-Keeping-Application/static/media/bin.107d8653ee655a03d51b804dd3907649.svg",
+    "static/media/unpin.svg": "/Note-Keeping-Application/static/media/unpin.9b95863ef1ce4db317a13be47a05b704.svg",
+    "static/media/bulb.svg": "/Note-Keeping-Application/static/media/bulb.b17891172e71bd2ddf04bd4bf0de8522.svg",
+    "static/media/important.svg": "/Note-Keeping-Application/static/media/important.03f6c1ed6333d7ca4aa8264f038d9193.svg",
+    "static/media/pin.svg": "/Note-Keeping-Application/static/media/pin.ae384a9c5f63d508e05abf4f562e2322.svg",
+    "static/media/restore.svg": "/Note-Keeping-Application/static/media/restore.7a067e3140511cb7951118ee81055f5e.svg",
+    "static/media/grid.svg": "/Note-Keeping-Application/static/media/grid.f4fcf3bb661773581ecd71bd933664a2.svg",
+    "static/media/archive.svg": "/Note-Keeping-Application/static/media/archive.1cb78dead62e40a606903185b3aed993.svg",
+    "index.html": "/Note-Keeping-Application/index.html",
+    "static/media/user.svg": "/Note-Keeping-Application/static/media/user.61b2f3c1de5a2a22093a427c46ba5bb4.svg",
+    "static/media/notes.svg": "/Note-Keeping-Application/static/media/notes.2c4764483cb0f526b0334e330c630d85.svg",
+    "static/media/bars.svg": "/Note-Keeping-Application/static/media/bars.5e983962e32ff09b05af761dbfb34888.svg",
+    "static/media/list.svg": "/Note-Keeping-Application/static/media/list.29e1d58d5589a36f8b9358cbc72480e3.svg",
+    "main.fb060b46.css.map": "/Note-Keeping-Application/static/css/main.fb060b46.css.map",
+    "main.a5c1be87.js.map": "/Note-Keeping-Application/static/js/main.a5c1be87.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fb060b46.css",
+    "static/js/main.a5c1be87.js"
+  ]
+}
