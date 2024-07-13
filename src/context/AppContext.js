@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useEffect } from "react";
 import toast from "react-hot-toast";
 
 //Creating context for all components in the app and also exporting simultneously
@@ -6,12 +6,44 @@ export const AppContext = createContext();
 
 //creating and exporting the context provider
 export default function AppContextProvider({ children }) {
+  const loadFromLocalStorage = (key, initialValue) => {
+    try {
+      const savedItem = localStorage.getItem(key);
+      return savedItem ? JSON.parse(savedItem) : initialValue;
+    } catch (error) {
+      console.error(`Error loading ${key} from localStorage`, error);
+      return initialValue;
+    }
+  };
+
   //All state variable in the application
-  const [notes, setNotes] = useState([]);
-  const [deleted, setDeleted] = useState([]);
-  const [archived, setArchived] = useState([]);
-  const [important, setImportant] = useState([]);
+  const [notes, setNotes] = useState(() => loadFromLocalStorage("notes", []));
+  const [deleted, setDeleted] = useState(() =>
+    loadFromLocalStorage("notes", [])
+  );
+  const [archived, setArchived] = useState(() =>
+    loadFromLocalStorage("notes", [])
+  );
+  const [important, setImportant] = useState(() =>
+    loadFromLocalStorage("notes", [])
+  );
   const [showOverlay, setShowOverlay] = useState(false);
+
+  useEffect(() => {
+    localStorage.setItem("notes", JSON.stringify(notes));
+  }, [notes]);
+
+  useEffect(() => {
+    localStorage.setItem("deleted", JSON.stringify(deleted));
+  }, [deleted]);
+
+  useEffect(() => {
+    localStorage.setItem("archived", JSON.stringify(archived));
+  }, [archived]);
+
+  useEffect(() => {
+    localStorage.setItem("important", JSON.stringify(important));
+  }, [important]);
 
   //to add new note
   function addNote(title, description) {

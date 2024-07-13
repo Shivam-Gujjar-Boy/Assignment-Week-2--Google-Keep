@@ -23,9 +23,9 @@ const Note = (props) => {
   const type = props.type;
 
   return (
-    <div className="w-[290px] h-[220px] inline-block border-white border-2 m-3 rounded-xl shadow-white shadow-lg">
+    <div className="w-[290px] h-[220px] inline-block border-white border-2 m-3 rounded-xl shadow-white shadow-sm">
       <div className="flex flex-col items-center">
-        <p className=" w-full h-10 px-3 py-2 border focus:border-blue-500 text-[20px] flex justify-center items-center rounded-t-xl">
+        <p className=" w-full h-10 px-3 py-2 border focus:border-blue-500 text-[20px] flex justify-center items-center rounded-t-xl break-words">
           {note.title}
         </p>
         <div
@@ -37,7 +37,8 @@ const Note = (props) => {
             border
             border-gray-300
             text-white
-            text-center"
+            text-center
+            break-words"
         >
           {note.content}
         </div>
